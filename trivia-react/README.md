@@ -1,12 +1,75 @@
-# React + Vite
+# 🧠 Juego de Trivia con React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto es un juego de trivia desarrollado completamente en **React**. Utiliza la API de [Open Trivia DB](https://opentdb.com/) para obtener preguntas por categoría y dificultad, y presenta una interfaz moderna e interactiva al usuario.
 
-Currently, two official plugins are available:
+## 🚀 ¿Qué hace esta app?
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Permite que el usuario:
+- Seleccione una categoría y nivel de dificultad.
+- Responda 5 preguntas multiple choice.
+- Vea el puntaje actualizado tras cada respuesta.
+- Acceda a una pantalla final con el puntaje total.
+- Decida si quiere reiniciar el juego o volver al menú de inicio.
 
-## Expanding the ESLint configuration
+## 🧩 Estructura del proyecto
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Los componentes principales del juego están divididos en archivos React:
+
+- `App.jsx`: Componente raíz que gestiona la navegación entre pantallas.
+- `StartScreen.jsx`: Pantalla inicial con selección de categoría y dificultad.
+- `GameScreen.jsx`: Pantalla de juego donde se muestran las preguntas y respuestas.
+- `FinalScreen.jsx`: Pantalla de resultados finales y opciones para reiniciar o volver al menú.
+- `index.css`: Estilos visuales personalizados con tipografías y colores modernos.
+
+## 📦 Instalación y ejecución local
+
+1. **Clonar el repositorio**
+   ```bash
+   git clone https://github.com/octicortez/Trivia.git
+   cd Trivia
+   ```
+
+2. **Instalar dependencias**
+   ```bash
+   npm install
+   ```
+
+3. **Ejecutar la app**
+   ```bash
+   npm start
+   ```
+
+La app se abrirá en `http://localhost:3000`.
+
+## 🎮 Instrucciones de uso
+
+1. **Pantalla de inicio**
+   - Elegí una categoría y dificultad.
+   - Presioná el botón **¡Jugar!**
+
+2. **Pantalla de juego**
+   - Se cargan 5 preguntas según tu selección.
+   - Elegí una respuesta por pregunta. Se mostrará en verde si es correcta, o rojo si es incorrecta.
+   - El puntaje se actualiza automáticamente.
+
+3. **Pantalla final**
+   - Se muestra tu puntaje final.
+   - Podés volver a empezar o regresar al menú.
+
+## 🛠️ Tecnologías utilizadas
+
+- **React** con componentes funcionales.
+- **JavaScript** para la lógica del juego.
+- **CSS personalizado** con fondo temático y diseño responsivo.
+- **API externa**: [Open Trivia DB](https://opentdb.com/)
+
+## 🌱 Posibles mejoras
+
+- Guardar el historial de puntajes con LocalStorage.
+- Implementar un sistema de ranking entre jugadores.
+- Agregar sonidos y efectos visuales.
+- Convertirlo en app mobile con React Native.
+
+---
+
+💡 Proyecto realizado por [@octicortez](https://github.com/octicortez)
